@@ -75,19 +75,46 @@ pieChartBarnard  : [
     value       : 0.22
   }
 ],
-
 pieChartPenn  : [
   {
     color       : 'red',
-    description : 'Women in non-STEM majors.',
+    description : 'Men & Women in non-STEM majors.',
     title       : 'flowers',
-    value       : 0.90
+    value       : 0.25
   },
   {
     color       : 'blue',
-    description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
-    value       : 0.10
+    value       : 0.75
+  }
+],
+pieChartDrexel  : [
+  {
+    color       : 'red',
+    description : 'Men & Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.68
+  },
+  {
+    color       : 'blue',
+    description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.32
+  }
+],
+pieChartTemple : [
+  {
+    color       : 'red',
+    description : 'Men & Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.12
+  },
+  {
+    color       : 'blue',
+    description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.88
   }
 ]
   };
@@ -213,7 +240,7 @@ pieChartPenn  : [
                     .text ( '0 %' )
                     .attr( 'class', 'pieChart--detail--percentage' )
                     .attr( 'x', ( position === 'left' ? 0 : infoWidth ) )
-                    .attr( 'y', -10 )
+                    .attr( 'y', 29 )
                     .attr( 'text-anchor', anchor )
                     .transition()
                     .duration( DURATION )
@@ -232,8 +259,8 @@ pieChartPenn  : [
                     .attr( 'class', 'pieChart--detail--divider' )
                     .attr( 'x1', 0 )
                     .attr( 'x2', 0 )
-                    .attr( 'y1', 0 )
-                    .attr( 'y2', 0 )
+                    .attr( 'y1', 32 )
+                    .attr( 'y2', 32 )
                     .transition()
                     .duration( DURATION )
                     .attr( 'x2', infoWidth );
@@ -242,6 +269,7 @@ pieChartPenn  : [
                     .append( 'foreignObject' )
                     .attr( 'width', infoWidth )
                     .attr( 'height', 100 )
+                    .attr( 'y', 24)
                     .append( 'xhtml:body' )
                     .attr(
                       'class',
@@ -257,7 +285,9 @@ pieChartPenn  : [
     drawPieChart(     'pieChart_Smith',     data.pieChartSmith );
     drawPieChart(     'pieChart_Holyoke',     data.pieChartHolyoke );
     drawPieChart(     'pieChart_Barnard',     data.pieChartBarnard );
+    drawPieChart(     'pieChart_Drexel',     data.pieChartDrexel );
     drawPieChart(     'pieChart_Penn',     data.pieChartPenn );
+    drawPieChart(     'pieChart_Temple',     data.pieChartTemple );
 
 
   }

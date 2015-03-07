@@ -77,16 +77,16 @@ pieChartBarnard  : [
 ],
 pieChartPenn  : [
   {
-    color       : 'blue',
+    color       : 'orange',
     description : 'Men & Women in non-STEM majors.',
     title       : 'flowers',
-    value       : 0.25
+    value       : 0.75
   },
   {
-    color       : 'orange',
+    color       : 'blue',
     description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
-    value       : 0.75
+    value       : 0.25
   }
 ],
 pieChartDrexel  : [

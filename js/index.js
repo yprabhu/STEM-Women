@@ -136,13 +136,13 @@ pieChartCMU : [
     color       : 'orange',
     description : 'Men & Women in non-STEM majors.',
     title       : 'flowers',
-    value       : 0.52
+    value       : 0.48
   },
   {
     color       : 'blue',
     description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
-    value       : 0.48
+    value       : 0.52
   }
 ]
   };

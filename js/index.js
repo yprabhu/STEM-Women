@@ -92,6 +92,26 @@ pieChartPenn  : [
 ]
   };
 
+function drawBarChart() {
+
+  var data = [4, 8, 15, 16, 23, 42];
+
+  var x = d3.scale.linear()
+      .domain([0, d3.max(data)])
+      .range([0, 420]);
+
+  d3.select(".barchart")
+    .selectAll("div")
+      .data(data)
+    .enter().append("div")
+      .style("width", function(d) { return x(d) + "px"; })
+      .text(function(d) { return d; });
+
+  }
+
+
+
+
   var DURATION = 1500;
   var DELAY    = 500;
 
@@ -258,6 +278,7 @@ pieChartPenn  : [
     drawPieChart(     'pieChart_Holyoke',     data.pieChartHolyoke );
     drawPieChart(     'pieChart_Barnard',     data.pieChartBarnard );
     drawPieChart(     'pieChart_Penn',     data.pieChartPenn );
+    drawBarChart();
 
 
   }

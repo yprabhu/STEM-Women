@@ -24,12 +24,22 @@ body ul, body li {
 
 .chart {
   min-height: 400px;
+  padding-top: 10px;
   border-bottom: 1px solid #eee;
   padding: 1em;
 }
 
 .chart--headline, .chart--subHeadline {
   text-align: center;
+}
+
+.chart--subHeader {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 2px;
+
 }
 
 .chart--headline {
@@ -48,7 +58,7 @@ body ul, body li {
 
 .chart--subHeadline {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -187,6 +197,14 @@ body ul, body li {
   fill: #cd1f2a;
 }
 
+.pieChart__orange {
+    fill: #04819E;
+}
+
+.pieChart__blue {
+    fill: #FF7F00;
+}
+
 /**
  * Helper classes
  */
@@ -225,11 +243,8 @@ body, html {
     text-align: center;
 }
 
-.barchart div {
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 5px;
-  margin: 2px;
-  color: white;
+.barchart  {
+ padding: 10px;
+ padding-bottom: 30px;
+ margin-left: 200px;
 }

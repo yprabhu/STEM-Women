@@ -54,7 +54,7 @@ pieChartHolyoke  : [
     value       : 0.75
   },
   {
-    color       : 'blue',
+    color       : 'black',
     description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
     value       : 0.25
@@ -69,47 +69,55 @@ pieChartBarnard  : [
     value       : 0.78
   },
   {
-    color       : 'blue',
+    color       : 'black',
     description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
     value       : 0.22
   }
 ],
-
 pieChartPenn  : [
   {
-    color       : 'red',
-    description : 'Women in non-STEM majors.',
+    color       : 'orange',
+    description : 'Men & Women in non-STEM majors.',
     title       : 'flowers',
-    value       : 0.90
+    value       : 0.25
   },
   {
     color       : 'blue',
-    description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
-    value       : 0.10
+    value       : 0.75
+  }
+],
+pieChartDrexel  : [
+  {
+    color       : 'orange',
+    description : 'Men & Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.68
+  },
+  {
+    color       : 'blue',
+    description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.32
+  }
+],
+pieChartTemple : [
+  {
+    color       : 'orange',
+    description : 'Men & Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.88
+  },
+  {
+    color       : 'blue',
+    description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.12
   }
 ]
   };
-
-function drawBarChart() {
-
-  var data = [4, 8, 15, 16, 23, 42];
-
-  var x = d3.scale.linear()
-      .domain([0, d3.max(data)])
-      .range([0, 420]);
-
-  d3.select(".barchart")
-    .selectAll("div")
-      .data(data)
-    .enter().append("div")
-      .style("width", function(d) { return x(d) + "px"; })
-      .text(function(d) { return d; });
-
-  }
-
-
 
 
   var DURATION = 1500;
@@ -233,7 +241,7 @@ function drawBarChart() {
                     .text ( '0 %' )
                     .attr( 'class', 'pieChart--detail--percentage' )
                     .attr( 'x', ( position === 'left' ? 0 : infoWidth ) )
-                    .attr( 'y', -10 )
+                    .attr( 'y', 29 )
                     .attr( 'text-anchor', anchor )
                     .transition()
                     .duration( DURATION )
@@ -252,8 +260,8 @@ function drawBarChart() {
                     .attr( 'class', 'pieChart--detail--divider' )
                     .attr( 'x1', 0 )
                     .attr( 'x2', 0 )
-                    .attr( 'y1', 0 )
-                    .attr( 'y2', 0 )
+                    .attr( 'y1', 32 )
+                    .attr( 'y2', 32 )
                     .transition()
                     .duration( DURATION )
                     .attr( 'x2', infoWidth );
@@ -262,6 +270,7 @@ function drawBarChart() {
                     .append( 'foreignObject' )
                     .attr( 'width', infoWidth )
                     .attr( 'height', 100 )
+                    .attr( 'y', 24)
                     .append( 'xhtml:body' )
                     .attr(
                       'class',
@@ -278,6 +287,9 @@ function drawBarChart() {
     drawPieChart(     'pieChart_Holyoke',     data.pieChartHolyoke );
     drawPieChart(     'pieChart_Barnard',     data.pieChartBarnard );
     drawPieChart(     'pieChart_Penn',     data.pieChartPenn );
+    drawPieChart(     'pieChart_Drexel',     data.pieChartDrexel );
+    drawPieChart(     'pieChart_Temple',     data.pieChartTemple );
+
     drawBarChart();
 
 

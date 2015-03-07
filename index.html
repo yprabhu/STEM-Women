@@ -22,8 +22,8 @@
 <div class="charts--container">
   <ul>
     <li class="chart">
+      <h2 class="chart--subHeader">How many women graduate with a degree in a STEM major?</h2>
       <h3 class="chart--headline">Bryn Mawr College</h3>
-      <h2 class="chart--subheadline">How many women graduate with a degree in a STEM major?</h2>
       <div id="pieChart_BMC">
         <svg id="pieChartSVG">
           <defs>
@@ -46,12 +46,11 @@
           </defs>
         </svg>
       </div>
-      <p class=stat_info>2012-2013 academic year (n = 92; total graduates = 327)</p>
+      <p class="stat_info">2012-2013 academic year (n = 92; total graduates = 327)</p>
     </li>
 
     <li class="chart">
       <h3 class="chart--headline">Wellesley College</h3>
-      <h2 class="chart--subheadline">How many women graduate with a degree in a STEM major?</h2>
       <div id="pieChart_Wellesley">
         <svg id="pieChartSVG">
           <defs>
@@ -74,12 +73,11 @@
           </defs>
         </svg>
       </div>
-      <p class=stat_info>2012-2013 academic year (n = 140; total graduates = 604)</p>
+      <p class="stat_info">2012-2013 academic year (n = 140; total graduates = 604)</p>
     </li>
 
     <li class="chart">
       <h3 class="chart--headline">Smith College</h3>
-      <h2 class="chart--subheadline">How many women graduate with a degree in a STEM major?</h2>
       <div id="pieChart_Smith">
         <svg id="pieChartSVG">
           <defs>
@@ -102,12 +100,11 @@
           </defs>
         </svg>
       </div>
-      <p class=stat_info>2012-2013 academic year (n = 149; total graduates = 698)</p>
+      <p class="stat_info">2012-2013 academic year (n = 149; total graduates = 698)</p>
     </li>
 
     <li class="chart">
-      <h3 class="chart--subHeadline">Mount Holyoke College</h3>
-      <h2 class="chart--headline">How many women graduate with a degree in a STEM major?</h2>
+      <h3 class="chart--headline">Mount Holyoke College</h3>
       <div id="pieChart_Holyoke">
         <svg id="pieChartSVG">
           <defs>
@@ -130,12 +127,11 @@
           </defs>
         </svg>
       </div>
-      <p class=stat_info>2012-2013 academic year (n = 151; total graduates = 612)</p>
+      <p class="stat_info">2012-2013 academic year (n = 151; total graduates = 612)</p>
     </li>
 
     <li class="chart">
-      <h3 class="chart--subHeadline">Barnard College</h3>
-      <h2 class="chart--headline">How many women graduate with a degree in a STEM major?</h2>
+      <h3 class="chart--headline">Barnard College</h3>
       <div id="pieChart_Barnard">
         <svg id="pieChartSVG">
           <defs>
@@ -158,7 +154,7 @@
           </defs>
         </svg>
       </div>
-      <p class=stat_info>2012-2013 academic year (n = 135; total graduates = 623)</p>
+      <p class="stat_info">2012-2013 academic year (n = 135; total graduates = 623)</p>
     </li>
 
   </ul>
@@ -167,12 +163,11 @@
 </div><!-- close col 1 -->
 
 <div id="col-2">
-
     <div class="charts--container">
       <ul>
         <li class="chart">
-          <h3 class="chart--subHeadline">University of Pennsylvania</h3>
-          <h2 class="chart--headline">How many women graduate with a degree in a STEM major?</h2>
+          <h2 class="chart--subHeader">How many (men &amp; women) students graduate with a degree in a STEM major?</h2>
+          <h3 class="chart--headline">University of Pennsylvania</h3>
           <div id="pieChart_Penn">
             <svg id="pieChartSVG">
               <defs>
@@ -195,6 +190,59 @@
               </defs>
             </svg>
           </div>
+          <p class="stat_info">2012-2013 academic year</p>
+        </li>
+        <li class="chart">
+          <h3 class="chart--headline">Drexel University</h3>
+          <div id="pieChart_Drexel">
+            <svg id="pieChartSVG">
+              <defs>
+                <filter id='pieChartInsetShadow'>
+                  <feOffset dx='0' dy='0'/>
+                  <feGaussianBlur stdDeviation='3' result='offset-blur' />
+                  <feComposite operator='out' in='SourceGraphic' in2='offset-blur' result='inverse' />
+                  <feFlood flood-color='black' flood-opacity='1' result='color' />
+                  <feComposite operator='in' in='color' in2='inverse' result='shadow' />
+                  <feComposite operator='over' in='shadow' in2='SourceGraphic' />
+                </filter>
+                <filter id="pieChartDropShadow">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                  <feOffset in="blur" dx="0" dy="3" result="offsetBlur" />
+                  <feMerge>
+                    <feMergeNode />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+          <p class="stat_info">2012-2013 academic year</p>
+        </li>
+        <li class="chart">
+          <h3 class="chart--headline">Temple University</h3>
+          <div id="pieChart_Temple">
+            <svg id="pieChartSVG">
+              <defs>
+                <filter id='pieChartInsetShadow'>
+                  <feOffset dx='0' dy='0'/>
+                  <feGaussianBlur stdDeviation='3' result='offset-blur' />
+                  <feComposite operator='out' in='SourceGraphic' in2='offset-blur' result='inverse' />
+                  <feFlood flood-color='black' flood-opacity='1' result='color' />
+                  <feComposite operator='in' in='color' in2='inverse' result='shadow' />
+                  <feComposite operator='over' in='shadow' in2='SourceGraphic' />
+                </filter>
+                <filter id="pieChartDropShadow">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                  <feOffset in="blur" dx="0" dy="3" result="offsetBlur" />
+                  <feMerge>
+                    <feMergeNode />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+          <p class="stat_info">2012-2013 academic year</p>
         </li>
 
     </ul>
@@ -202,14 +250,10 @@
 
 
 
-<div class="charts--container">
-
-<div class="barchart"></div>
-
-</div>
-
-
 </div><!-- close col 2 -->
+
+<img class="barchart" src="img/bar_chart.png" alt="Percentage of women in top tech companies">
+
 
 </div><!-- close container -->
 

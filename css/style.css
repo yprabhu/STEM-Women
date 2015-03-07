@@ -44,13 +44,13 @@ body ul, body li {
   left: 50%;
   width: 25%;
   margin: 0 0 0 -12.5%;
-  border-top: 1px dashed #999999;
 }
 
 .chart--subHeadline {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .charts--container {
@@ -179,12 +179,12 @@ body ul, body li {
   text-align: right;
 }
 
-.pieChart__blue {
-  fill: #6bb7c7;
+.pieChart__black {
+  fill: #000000;
 }
 
 .pieChart__red {
-  fill: #d79d91;
+  fill: #cd1f2a;
 }
 
 /**

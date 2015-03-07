@@ -44,6 +44,21 @@ pieChartSmith  : [
     title       : 'trains',
     value       : 0.20
   }
+],
+
+pieChartPenn  : [
+  {
+    color       : 'red',
+    description : 'Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.90
+  },
+  {
+    color       : 'blue',
+    description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.10
+  }
 ]
   };
 
@@ -210,6 +225,7 @@ pieChartSmith  : [
     drawPieChart(     'pieChart_BMC',     data.pieChartBMC );
     drawPieChart(     'pieChart_Wellesley',     data.pieChartWellesley );
     drawPieChart(     'pieChart_Smith',     data.pieChartSmith );
+    drawPieChart(     'pieChart_Penn',     data.pieChartPenn );
 
 
   }

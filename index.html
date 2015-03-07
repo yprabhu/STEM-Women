@@ -14,6 +14,11 @@
 <body>
 
   <h1 class="charts--headline">College Women in STEM Majors</h1>
+
+ <div id="container">
+
+  <div id="col-1">
+
 <div class="charts--container">
   <ul>
     <li class="chart">
@@ -99,6 +104,46 @@
 
   </ul>
 </div>
+
+</div><!-- close col 1 -->
+
+<div id="col-2">
+
+    <div class="charts--container">
+      <ul>
+        <li class="chart">
+          <h3 class="chart--subHeadline">University of Pennsylvania</h3>
+          <h2 class="chart--headline">How many women graduate with a degree in a STEM major?</h2>
+          <div id="pieChart_Penn">
+            <svg id="pieChartSVG">
+              <defs>
+                <filter id='pieChartInsetShadow'>
+                  <feOffset dx='0' dy='0'/>
+                  <feGaussianBlur stdDeviation='3' result='offset-blur' />
+                  <feComposite operator='out' in='SourceGraphic' in2='offset-blur' result='inverse' />
+                  <feFlood flood-color='black' flood-opacity='1' result='color' />
+                  <feComposite operator='in' in='color' in2='inverse' result='shadow' />
+                  <feComposite operator='over' in='shadow' in2='SourceGraphic' />
+                </filter>
+                <filter id="pieChartDropShadow">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                  <feOffset in="blur" dx="0" dy="3" result="offsetBlur" />
+                  <feMerge>
+                    <feMergeNode />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </li>
+
+    </ul>
+</div>
+
+</div><!-- close col 2 -->
+
+</div><!-- close container -->
 
   <script src='http://d3js.org/d3.v3.min.js'></script>
 

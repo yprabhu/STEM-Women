@@ -6,13 +6,13 @@
         color       : 'red',
         description : 'Women in non-STEM majors.',
         title       : 'flowers',
-        value       : 0.62
+        value       : 0.72
       },
       {
         color       : 'black',
         description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
         title       : 'trains',
-        value       : 0.38
+        value       : 0.28
       }
   ],
 
@@ -21,13 +21,13 @@
       color       : 'red',
       description : 'Women in non-STEM majors.',
       title       : 'flowers',
-      value       : 0.70
+      value       : 0.77
     },
     {
       color       : 'black',
       description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
       title       : 'trains',
-      value       : 0.30
+      value       : 0.23
     }
 ],
 
@@ -36,13 +36,43 @@ pieChartSmith  : [
     color       : 'red',
     description : 'Women in non-STEM majors.',
     title       : 'flowers',
-    value       : 0.80
+    value       : 0.79
   },
   {
     color       : 'black',
     description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
-    value       : 0.20
+    value       : 0.21
+  }
+],
+
+pieChartHolyoke  : [
+  {
+    color       : 'red',
+    description : 'Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.75
+  },
+  {
+    color       : 'blue',
+    description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.25
+  }
+],
+
+pieChartBarnard  : [
+  {
+    color       : 'red',
+    description : 'Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.78
+  },
+  {
+    color       : 'blue',
+    description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.22
   }
 ],
 
@@ -225,6 +255,8 @@ pieChartPenn  : [
     drawPieChart(     'pieChart_BMC',     data.pieChartBMC );
     drawPieChart(     'pieChart_Wellesley',     data.pieChartWellesley );
     drawPieChart(     'pieChart_Smith',     data.pieChartSmith );
+    drawPieChart(     'pieChart_Holyoke',     data.pieChartHolyoke );
+    drawPieChart(     'pieChart_Barnard',     data.pieChartBarnard );
     drawPieChart(     'pieChart_Penn',     data.pieChartPenn );
 
 

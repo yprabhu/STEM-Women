@@ -220,3 +220,7 @@ body, html {
     width: 1300px;
     margin: 0 auto;
 }
+
+.stat_info {
+    text-align: center;
+}

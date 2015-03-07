@@ -9,7 +9,7 @@
         value       : 0.62
       },
       {
-        color       : 'blue',
+        color       : 'black',
         description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
         title       : 'trains',
         value       : 0.38
@@ -24,7 +24,7 @@
       value       : 0.70
     },
     {
-      color       : 'blue',
+      color       : 'black',
       description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
       title       : 'trains',
       value       : 0.30
@@ -39,7 +39,7 @@ pieChartSmith  : [
     value       : 0.80
   },
   {
-    color       : 'blue',
+    color       : 'black',
     description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
     value       : 0.20

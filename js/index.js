@@ -116,6 +116,34 @@ pieChartTemple : [
     title       : 'trains',
     value       : 0.12
   }
+],
+pieChartPennState : [
+  {
+    color       : 'orange',
+    description : 'Men & Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.70
+  },
+  {
+    color       : 'blue',
+    description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.30
+  }
+],
+pieChartCMU : [
+  {
+    color       : 'orange',
+    description : 'Men & Women in non-STEM majors.',
+    title       : 'flowers',
+    value       : 0.52
+  },
+  {
+    color       : 'blue',
+    description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
+    title       : 'trains',
+    value       : 0.48
+  }
 ]
   };
 
@@ -289,7 +317,8 @@ pieChartTemple : [
     drawPieChart(     'pieChart_Penn',     data.pieChartPenn );
     drawPieChart(     'pieChart_Drexel',     data.pieChartDrexel );
     drawPieChart(     'pieChart_Temple',     data.pieChartTemple );
-
+    drawPieChart(     'pieChart_PennState',     data.pieChartPennState );
+    drawPieChart(     'pieChart_CMU',     data.pieChartCMU);
     drawBarChart();
 
 

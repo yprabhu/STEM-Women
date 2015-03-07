@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
 
-  <title>College Women in STEM Majors</title>
+  <title>Gender Breakdown in STEM</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -13,7 +13,7 @@
 
 <body>
 
-  <h1 class="charts--headline">College Women in STEM Majors</h1>
+  <h1 class="charts--headline">Gender Breakdown in STEM</h1>
 
  <div id="container">
 
@@ -22,7 +22,7 @@
 <div class="charts--container">
   <ul>
     <li class="chart">
-      <h2 class="chart--subHeader">How many women graduate with a degree in a STEM major?</h2>
+      <h2 class="chart--subHeader">How many women graduate with a degree in a STEM field?</h2>
       <h3 class="chart--headline">Bryn Mawr College</h3>
       <div id="pieChart_BMC">
         <svg id="pieChartSVG">
@@ -166,7 +166,7 @@
     <div class="charts--container">
       <ul>
         <li class="chart">
-          <h2 class="chart--subHeader">How many (men &amp; women) students graduate with a degree in a STEM major?</h2>
+          <h2 class="chart--subHeader">How many (men &amp; women) students graduate with a degree in a STEM field?</h2>
           <h3 class="chart--headline">University of Pennsylvania</h3>
           <div id="pieChart_Penn">
             <svg id="pieChartSVG">
@@ -221,6 +221,58 @@
         <li class="chart">
           <h3 class="chart--headline">Temple University</h3>
           <div id="pieChart_Temple">
+            <svg id="pieChartSVG">
+              <defs>
+                <filter id='pieChartInsetShadow'>
+                  <feOffset dx='0' dy='0'/>
+                  <feGaussianBlur stdDeviation='3' result='offset-blur' />
+                  <feComposite operator='out' in='SourceGraphic' in2='offset-blur' result='inverse' />
+                  <feFlood flood-color='black' flood-opacity='1' result='color' />
+                  <feComposite operator='in' in='color' in2='inverse' result='shadow' />
+                  <feComposite operator='over' in='shadow' in2='SourceGraphic' />
+                </filter>
+                <filter id="pieChartDropShadow">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                  <feOffset in="blur" dx="0" dy="3" result="offsetBlur" />
+                  <feMerge>
+                    <feMergeNode />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+          <p class="stat_info">2012-2013 academic year</p>
+        </li>
+           <li class="chart">
+          <h3 class="chart--headline">Penn State</h3>
+          <div id="pieChart_PennState">
+            <svg id="pieChartSVG">
+              <defs>
+                <filter id='pieChartInsetShadow'>
+                  <feOffset dx='0' dy='0'/>
+                  <feGaussianBlur stdDeviation='3' result='offset-blur' />
+                  <feComposite operator='out' in='SourceGraphic' in2='offset-blur' result='inverse' />
+                  <feFlood flood-color='black' flood-opacity='1' result='color' />
+                  <feComposite operator='in' in='color' in2='inverse' result='shadow' />
+                  <feComposite operator='over' in='shadow' in2='SourceGraphic' />
+                </filter>
+                <filter id="pieChartDropShadow">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                  <feOffset in="blur" dx="0" dy="3" result="offsetBlur" />
+                  <feMerge>
+                    <feMergeNode />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+          <p class="stat_info">2012-2013 academic year</p>
+        </li>
+        <li class="chart">
+          <h3 class="chart--headline">Carnegie Mellon</h3>
+          <div id="pieChart_CMU">
             <svg id="pieChartSVG">
               <defs>
                 <filter id='pieChartInsetShadow'>

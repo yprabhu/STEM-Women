@@ -16,8 +16,8 @@ $c-dashedLine       : adjust-lightness( $c-baseColor, 40 );
 
 $c-borderDevider : $c-borderBright;
 
-$c-red  : #d79d91;
-$c-blue : #6bb7c7;
+$c-red  : #FFF500;
+$c-blue : #057D9F;
 
 // font-stuff
 $f-family : sans-serif;
@@ -51,7 +51,7 @@ $d-chartHeight : 400px;
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-} 
+}
 
 body {
   font-size: $f-baseSize;
@@ -61,11 +61,11 @@ body {
   background-color: #ccc;
   background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 25%);
   background-size: 4px 4px;
-  
+
   ul {
     list-style: none;
   }
-  
+
   ul, li {
     margin: 0;
     padding: 0;
@@ -85,20 +85,20 @@ body {
 
 .chart--headline {
   position: relative;
-  
+
   font-weight: $f-weightHeadline;
   font-size: $f-sizeHeadline;
 
   &:before {
     position: absolute;
     content: '';
-    
+
     bottom: 133%;
     left: 50%;
-    
+
     width: 25%;
     margin: 0 0 0 -12.5%;
-    
+
     border-top: 1px dashed $c-dashedLine;
   }
 }
@@ -112,14 +112,14 @@ body {
 .charts--container {
   background-color: $c-bg;
   width: 100%;
-  
+
   @media screen and (min-width: 700px) {
     max-width: 700px;
-    
+
     left : 50%;
     top : 10%;
-    margin: 5em auto; 
-    
+    margin: 5em auto;
+
     box-shadow: 0 2em 2em $c-shadow;
   }
 }
@@ -144,7 +144,7 @@ body {
 .lineChart--bubble--label {
   fill: none;
   stroke: $c-blue;
-  
+
   font-size: $f-sizeBubbleLabel;
   font-style: italic;
   font-weight: $f-weight;
@@ -153,7 +153,7 @@ body {
 .lineChart--bubble--value {
   fill: #fff;
   stroke: #fff;
-  
+
   font-size: $f-sizeBubbleValue;
   font-weight: $f-weight;
 }
@@ -228,7 +228,7 @@ body {
 .pieChart--detail--percentage {
   font-size: $f-sizePieChartPercentage;
   font-weight: $f-weightPieChartPercentage;
-  
+
   fill: $c-baseColor;
   stroke-width: 1px;
 }
@@ -237,7 +237,7 @@ body {
   background-color: transparent;
   padding: 10px 0 0 0;
   margin: 0;
-  
+
   color: $c-baseColorBright;
   font-style: italic;
 }
@@ -260,7 +260,7 @@ body {
 
 /**
  * Helper classes
- */ 
+ */
 
 .hidden {
   display: none;

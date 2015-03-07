@@ -193,3 +193,7 @@ body ul, body li {
 .hidden {
   display: none;
 }
+
+.chart--headline {
+    /*padding-bottom: 50px;*/
+}

@@ -70,6 +70,33 @@
       </div>
     </li>
 
+    <li class="chart">
+      <h3 class="chart--subHeadline">Smith College</h3>
+      <h2 class="chart--headline">How many women graduate with a degree in a STEM major?</h2>
+      <div id="pieChart_Smith">
+        <svg id="pieChartSVG">
+          <defs>
+            <filter id='pieChartInsetShadow'>
+              <feOffset dx='0' dy='0'/>
+              <feGaussianBlur stdDeviation='3' result='offset-blur' />
+              <feComposite operator='out' in='SourceGraphic' in2='offset-blur' result='inverse' />
+              <feFlood flood-color='black' flood-opacity='1' result='color' />
+              <feComposite operator='in' in='color' in2='inverse' result='shadow' />
+              <feComposite operator='over' in='shadow' in2='SourceGraphic' />
+            </filter>
+            <filter id="pieChartDropShadow">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+              <feOffset in="blur" dx="0" dy="3" result="offsetBlur" />
+              <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </li>
+
   </ul>
 </div>
 

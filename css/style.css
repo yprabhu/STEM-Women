@@ -197,6 +197,14 @@ body ul, body li {
   fill: #cd1f2a;
 }
 
+.pieChart__orange {
+    fill: #04819E;
+}
+
+.pieChart__blue {
+    fill: #FF7F00;
+}
+
 /**
  * Helper classes
  */
@@ -233,4 +241,10 @@ body, html {
 
 .stat_info {
     text-align: center;
+}
+
+.barchart  {
+ padding: 10px;
+ padding-bottom: 30px;
+ margin-left: 200px;
 }

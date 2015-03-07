@@ -54,7 +54,7 @@ pieChartHolyoke  : [
     value       : 0.75
   },
   {
-    color       : 'blue',
+    color       : 'black',
     description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
     value       : 0.25
@@ -69,7 +69,7 @@ pieChartBarnard  : [
     value       : 0.78
   },
   {
-    color       : 'blue',
+    color       : 'black',
     description : 'Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
     value       : 0.22
@@ -77,13 +77,13 @@ pieChartBarnard  : [
 ],
 pieChartPenn  : [
   {
-    color       : 'red',
+    color       : 'blue',
     description : 'Men & Women in non-STEM majors.',
     title       : 'flowers',
     value       : 0.25
   },
   {
-    color       : 'blue',
+    color       : 'orange',
     description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
     value       : 0.75
@@ -91,7 +91,7 @@ pieChartPenn  : [
 ],
 pieChartDrexel  : [
   {
-    color       : 'red',
+    color       : 'orange',
     description : 'Men & Women in non-STEM majors.',
     title       : 'flowers',
     value       : 0.68
@@ -105,19 +105,20 @@ pieChartDrexel  : [
 ],
 pieChartTemple : [
   {
-    color       : 'red',
+    color       : 'orange',
     description : 'Men & Women in non-STEM majors.',
     title       : 'flowers',
-    value       : 0.12
+    value       : 0.88
   },
   {
     color       : 'blue',
     description : 'Men & Women in STEM majors (Science, Technology, Engineering, Mathematics).',
     title       : 'trains',
-    value       : 0.88
+    value       : 0.12
   }
 ]
   };
+
 
   var DURATION = 1500;
   var DELAY    = 500;
@@ -285,9 +286,11 @@ pieChartTemple : [
     drawPieChart(     'pieChart_Smith',     data.pieChartSmith );
     drawPieChart(     'pieChart_Holyoke',     data.pieChartHolyoke );
     drawPieChart(     'pieChart_Barnard',     data.pieChartBarnard );
-    drawPieChart(     'pieChart_Drexel',     data.pieChartDrexel );
     drawPieChart(     'pieChart_Penn',     data.pieChartPenn );
+    drawPieChart(     'pieChart_Drexel',     data.pieChartDrexel );
     drawPieChart(     'pieChart_Temple',     data.pieChartTemple );
+
+    drawBarChart();
 
 
   }
